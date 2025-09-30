@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Valorant Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="store.css"/>
+</head>
+<body>
+  <!-- Navigation Bar (Dropdowns) -->
+<header class="navbar">
+  <div class="logo-section">
+<a href="index.html">
+  <img src="/IMAGES&VIDEOS/RIOT_LOGO.png" alt="Riot Games Logo" class="riot-logo"/>
+</a>
+
+<a href="index.html">
+  <img src="/IMAGES&VIDEOS/VALORANT_ICON.png" alt="Valorant Icon" class="valo-icon"/>
+</a>
+  </div>
+
+  <nav class="nav-menu">
+    <ul>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">GAME INFO</a>
+        <ul class="dropdown-content">
+          <li><a href="AGENTS.html">Agents</a></li>
+          <li><a href="MAPS.html">Maps</a></li>
+          <li><a href="#">Arsenal</a></li>
+          <li><a href="#">Premier</a></li>
+          <li><a href="index.html">Next</a></li>
+        </ul>
+      </li>
+      <li><a href="#">MEDIA</a></li>
+      <li><a href="#">NEWS</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">SUPPORT</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Specs</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Code</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">OUR SOCIALS</a>
+        <ul class="dropdown-content socials">
+        <li><a href="https://x.com/PlayVALORANT" target="_blank">X (Twitter)</a></li>
+        <li><a href="https://www.youtube.com/@PlayVALORANT" target="_blank">YouTube</a></li>
+        <li><a href="https://www.instagram.com/playvalorantofficial/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@playvalorant" target="_blank">TikTok</a></li>
+        <li><a href="https://www.facebook.com/PlayVALORANT/" target="_blank">Facebook</a></li>
+        <li><a href="https://discord.com/invite/valorant" target="_blank">Discord</a></li>
+        </ul>
+      </li>
+      <li><a href="#">ESPORTS</a></li>
+      <li><a href="#">CHAMPIONS OF CHAMPIONS</a></li>
+      <li><a href="#">STORE</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-section">
+    <a href="DOWNLOAD.html" class="playnow-link" aria-label="Go to Download page">
+      <img src="/IMAGES&VIDEOS/PLAY_NOW_BUTTON.png" alt="Play Now" class="nav-icon search-icon"/>
+    </a>
+
+    <img src="/IMAGES&VIDEOS/BROWSER_LOGO.png" alt="Browse" class="nav-icon browser-icon big"/>
+    <img src="/IMAGES&VIDEOS/HAMBURGER_ICON.png" alt="Menu" class="nav-icon hamburger-icon big"/>
+  </div>
+</header>
+
+  <!-- Store Main -->
+  <main class="store-main">
+    <!-- Search and Filters -->
+    <section class="store-filters">
+      <input type="text" class="store-search" placeholder="Search a skin"/>
+      <div class="store-chips" id="chip-row-1">
+        <button class="chip selected">Classic</button>
+        <button class="chip">Shorty</button>
+        <button class="chip">Frenzy</button>
+        <button class="chip">Ghost</button>
+        <button class="chip">Sheriff</button>
+        <button class="chip">Stinger</button>
+        <button class="chip">Spectre</button>
+        <button class="chip">Bucky</button>
+        <button class="chip">Judge</button>
+      </div>
+      <div class="store-chips" id="chip-row-2">
+        <div class="chip-group-label">Weapons</div>
+        <button class="chip">Bulldog</button>
+        <button class="chip">Guardian</button>
+        <button class="chip">Phantom</button>
+        <button class="chip">Vandal</button>
+        <button class="chip">Marshal</button>
+        <button class="chip">Outlaw</button>
+        <button class="chip">Operator</button>
+        <button class="chip">Ares</button>
+        <button class="chip">Odin</button>
+        <button class="chip">Melee</button>
+      </div>
+      <div class="store-chips" id="chip-row-3">
+        <div class="chip-group-label">Price tier</div>
+        <button class="chip chip-tier selected">All</button>
+        <button class="chip chip-tier">Select Edition</button>
+        <button class="chip chip-tier">Deluxe Edition</button>
+        <button class="chip chip-tier">Premium Edition</button>
+        <button class="chip chip-tier">Exclusive Edition</button>
+        <button class="chip chip-tier">Ultra Edition</button>
+      </div>
+    </section>
+
+    <!-- Weapon grid list -->
+    <section class="store-grid">
+      <!-- 30 GUNS BELOW -->
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/bb03aa45-4115-664c-22b9-bf8ef20f0d12_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/E6A6EA31-4A05-8889-B065-D09A536AFFFD.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/E6A6EA31-4A05-8889-B065-D09A536AFFFD.png" alt="Spectrum Classic" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier skin-tier-exclusive"></span>
+          <span class="skin-name">Spectrum Classic</span>
+          <span class="skin-price">2,675</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/a73aac70-4273-acdf-9952-0db1202b2bb5_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/EDA9DFED-4D9F-BF1F-9D47-8598AEEBD14D.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/EDA9DFED-4D9F-BF1F-9D47-8598AEEBD14D.png" alt="Ion Shorty" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Ion Shorty</span>
+          <span class="skin-price">1,775</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/1d4f3b95-4d66-7f96-51e7-cb8cf30045a1_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/C3FECD19-4484-6C32-7255-9C89FDCDE00D.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/C3FECD19-4484-6C32-7255-9C89FDCDE00D.png" alt="Prime Frenzy" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Prime Frenzy</span>
+          <span class="skin-price">1,775</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/cb464f4f-4a18-6da8-619e-3cbcfb4090a6_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/AB5245A7-4ABD-131B-2226-C3AD68B4E503.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/AB5245A7-4ABD-131B-2226-C3AD68B4E503.png" alt="Recon Ghost" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Recon Ghost</span>
+          <span class="skin-price">1,775</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/f59f33e5-4158-0d7e-8747-28b76f0f2552_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/BB1E1703-4EA1-9BE5-C145-4480A6B9F0D7.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/BB1E1703-4EA1-9BE5-C145-4480A6B9F0D7.png" alt="Sentinels Sheriff" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Sentinels of Light Sheriff</span>
+          <span class="skin-price">2,175</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="st/IMAGES&VIDEOS/GUNS IMAGES/" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/21189635-4F65-C3A5-ADB5-D1B7BB609C56.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/21189635-4F65-C3A5-ADB5-D1B7BB609C56.png" alt="RGX Stinger" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">RGX 11z Pro Stinger</span>
+          <span class="skin-price">2,175</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/e27a6ce4-4241-36a1-1240-6c9428dc3dd7_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/81D37303-4626-9AFB-4503-E6B8B10A7275.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/81D37303-4626-9AFB-4503-E6B8B10A7275.png" alt="Spline Spectre" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Spline Spectre</span>
+          <span class="skin-price">1,775</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/d9ddc50a-4c73-c47a-2921-c69f741c7346_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/5830B4B7-4F7B-F63B-FF47-61AAA2736484.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/5830B4B7-4F7B-F63B-FF47-61AAA2736484.png" alt="Elderflame Bucky" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Elderflame Bucky</span>
+          <span class="skin-price">2,175</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="/IMAGES&VIDEOS/GUNS IMAGES/" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/747A6229-4F18-F170-AF78-719439BA122A.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/747A6229-4F18-F170-AF78-719439BA122A.png" alt="Reaver Judge" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Reaver Judge</span>
+          <span class="skin-price">1,775</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/7da13751-400e-cbb1-129b-cc90e47ab11d_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/9A160511-44EC-7FDA-7870-5B820A6FD514.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/9A160511-44EC-7FDA-7870-5B820A6FD514.png" alt="Glitchpop Bulldog" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Glitchpop Bulldog</span>
+          <span class="skin-price">2,175</span>
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/0bc2a721-40cc-1ba9-6b03-66bcd365358c_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/8726B894-4AAB-8A7D-00AB-F18C3F202DEB.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/8726B894-4AAB-8A7D-00AB-F18C3F202DEB.png" alt="Oni Guardian" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Oni Guardian</span>
+          <span class="skin-price">1,775</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="phttps://valorant.dyn.riotcdn.net/x/videos/release-11.06/72d67dd0-0d79-4c98-9e1d-c10068b024a8_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/D9DCE0EC-464C-DF67-63A3-1F9A05D322AD.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/D9DCE0EC-464C-DF67-63A3-1F9A05D322AD.png" alt="Prime Phantom" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Prime Phantom</span>
+          <span class="skin-price">1,775</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/3b446c72-416f-2c0a-00a5-7daf2c2cebb3_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/BE7B4527-4270-224C-E571-CB9132F84B75.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/BE7B4527-4270-224C-E571-CB9132F84B75.png" alt="Prime Vandal" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Prime Vandal</span>
+          <span class="skin-price">1,775</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/89cf05f6-4918-f8f5-12f8-97882c528962_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/16B745AC-4E5F-10AB-32B0-FA8384ECB69F.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/16B745AC-4E5F-10AB-32B0-FA8384ECB69F.png" alt="Sovereign Marshal" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Sovereign Marshal</span>
+          <span class="skin-price">1,275</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/c5cb3b64-4b6d-7302-0b4d-339f7a3a0791_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/E11AB469-4DF5-C304-2800-D281D84BFDD7.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/E11AB469-4DF5-C304-2800-D281D84BFDD7.png" alt="Reverie Outlaw" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Reverie Outlaw</span>
+          <span class="skin-price">1,675</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/e69e3438-447c-f9e3-631a-26b940b4c8ab_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/8F71E44B-4EAE-3963-C71B-11A2167D34DC.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/09B21BC6-493E-71B8-13FC-4C8DC7DF72D8.png" alt="Ion Operator" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Ion Operator</span>
+          <span class="skin-price">1,775</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/317ad54d-4a3d-ff20-58a0-4195bd69b1e5_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/427A79F6-4D66-4D2F-DDE2-7E83BE237CC8.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/427A79F6-4D66-4D2F-DDE2-7E83BE237CC8.png" alt="Singularity Ares" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Singularity Ares</span>
+          <span class="skin-price">2,175</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/9b98308d-4ed1-fab1-4c30-c49a3bdbbc05_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/1CF6AFFF-467D-C021-7D32-89A0DFAEC0E0.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/1CF6AFFF-467D-C021-7D32-89A0DFAEC0E0.png" alt="Prime//2.0 Odin" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Prime//2.0 Odin</span>
+          <span class="skin-price">1,775</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/317ad54d-4a3d-ff20-58a0-4195bd69b1e5_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/137FE851-4502-DA4E-57D3-1C862FFEFEE2.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/137FE851-4502-DA4E-57D3-1C862FFEFEE2.png" alt="RGX Butterfly Knife" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">RGX Butterfly Knife</span>
+          <span class="skin-price">4,350</span>
+          <a href="purchase-page.html" target="_blank" class="buy-button">Buy</a>
+
+        </div>
+      </div>
+      <!-- 10 more for 30 total -->
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/317ad54d-4a3d-ff20-58a0-4195bd69b1e5_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/09B21BC6-493E-71B8-13FC-4C8DC7DF72D8.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/09B21BC6-493E-71B8-13FC-4C8DC7DF72D8.png" alt="BlastX Classic" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier skin-tier-exclusive">Exclusive</span>
+          <span class="skin-name">BlastX Classic</span>
+          <span class="skin-price">2,175</span>
+        </div>
+      </div>
+      <div class="store-grid-card" data-video="https://valorant.dyn.riotcdn.net/x/videos/release-11.06/317ad54d-4a3d-ff20-58a0-4195bd69b1e5_default_universal.mp4" data-img="https://c-valorant-api.op.gg/Assets/WeaponSkins/CE2AFE33-4AC9-15B0-F913-05B8D0892FDD.png" onclick="openModal(this)">
+        <img src="https://c-valorant-api.op.gg/Assets/WeaponSkins/CE2AFE33-4AC9-15B0-F913-05B8D0892FDD.png" alt="Velocity Shorty" class="skin-img"/>
+        <div class="skin-details">
+          <span class="skin-tier"></span>
+          <span class="skin-name">Velocity Shorty</span>
+          <span class="skin-price">875</span>
+        </div>
+    </section>
+  </main>
+
+  <!-- Modal Popup -->
+  <div class="store-modal" id="storeModal" style="display:none;">
+    <div class="store-modal-backdrop" onclick="closeModal()"></div>
+    <div class="store-modal-box">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <video class="modal-video" id="modalVideo" src="" controls autoplay></video>
+      <div class="modal-varients">
+        <button class="variant-btn active">I</button>
+        <button class="variant-btn">II</button>
+        <button class="variant-btn">III</button>
+        <button class="variant-btn">IV</button>
+      </div>
+      <div class="modal-skin-details">
+        <img src="" alt="Skin Img" class="modal-img" id="modalImg"/>
+        <div class="modal-skin-name" id="modalSkinName"></div>
+        <span class="skin-tier skin-tier-exclusive">Exclusive Edition</span>
+        <span class="modal-skin-price" id="modalSkinPrice"></span>
+        <span class="modal-usercount"><i class="fa fa-user"></i> 34,339</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (same as other pages) -->
+<footer class="riot-footer">
+  <div class="footer-social">
+    <a href="https://twitter.com/valorant" target="_blank" class="footer-icon"><img src="/IMAGES&VIDEOS/X_LOGO.png" alt="Close"></a>
+    <a href="https://www.youtube.com/@valorant" target="_blank" class="footer-icon"><img src="/IMAGES&VIDEOS/YT_LOGO.png" alt="YouTube"></a>
+    <a href="https://instagram.com/valorant" target="_blank" class="footer-icon"><img src="/IMAGES&VIDEOS/INSTAGRAM_LOGO.png" alt="Instagram"></a>
+    <a href="https://www.tiktok.com/@valorant" target="_blank" class="footer-icon"><img src="/IMAGES&VIDEOS/TIK TOK_LOGO.png" alt="TikTok"></a>
+    <a href="https://www.facebook.com/playvalorant/" target="_blank" class="footer-icon"><img src="/IMAGES&VIDEOS/FACEBOOK_LOGO.png" alt="Facebook"></a>
+    <a href="https://discord.gg/valorant" target="_blank" class="footer-icon"><img src="/IMAGES&VIDEOS/DISCORD_LOGO.png" alt="Discord"></a>
+  </div>
+  <img src="/IMAGES&VIDEOS/RIOT_GAMES_LOGO.png" alt="Riot Games Footer Logo" class="footer-riot-logo"/>
+  <div class="footer-copyright">
+    © 2020-2025 Riot Games, Inc. RIOT GAMES, VALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Riot Games, Inc.
+  </div>
+  <div class="footer-links">
+    <a href="https://www.riotgames.com/en/privacy-notice" class="footer-link">PRIVACY NOTICE</a>
+    <a href="https://www.riotgames.com/en/terms-of-service" class="footer-link">TERMS OF SERVICE</a>
+    <a href="#" class="footer-link">COOKIE PREFERENCES</a>
+  </div>
+  <div class="footer-esrb">
+    <img src="/IMAGES&VIDEOS/U:A_LOGO.png" alt="ESRB Rating" class="footer-esrb-img"/>
+    <div class="footer-esrb-text">
+      Blood<br>
+      Language<br>
+      Violence<br>
+      Users Interact<br>
+      In-Game Purchases
+    </div>
+  </div>
+</footer>
+
+  <script>
+    // Show/hide modal
+    function openModal(card) {
+      document.getElementById('storeModal').style.display = 'flex';
+      document.getElementById('modalVideo').src = card.dataset.video;
+      document.getElementById('modalImg').src = card.dataset.img;
+      document.getElementById('modalSkinName').innerText = card.querySelector('.skin-name').innerText;
+      document.getElementById('modalSkinPrice').innerText = card.querySelector('.skin-price').innerText;
+    }
+    function closeModal() {
+      document.getElementById('storeModal').style.display = 'none';
+      document.getElementById('modalVideo').pause();
+    }
+  </script>
+</body>
+</html>
